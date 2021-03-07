@@ -1,0 +1,12 @@
+{
+    "$schema": "https://raw.githubusercontent.com/cypress-io/cypress/develop/cli/schema/cypress.schema.json",
+    "baseUrl": "http://automationpractice.com",
+    "experimentalSourceRewriting":true,
+    "watchForFileChanges":false,
+    "testFiles": "**/*.*spec.*",
+    "env": {
+        "name": "Elcy Braga",
+        "user": "pedrobrossmann@gmail.com",
+        "pwd": "123456789"
+    }
+}
