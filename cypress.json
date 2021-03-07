@@ -3,6 +3,7 @@
     "baseUrl": "http://automationpractice.com",
     "experimentalSourceRewriting":true,
     "watchForFileChanges":false,
+    "video": true,
     "testFiles": "**/*.*spec.*",
     "env": {
         "name": "Elcy Braga",

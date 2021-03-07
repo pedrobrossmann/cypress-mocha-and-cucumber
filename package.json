@@ -1,0 +1,25 @@
+{
+  "name": "desafio01-bootcamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^6.6.0",
+    "faker-br": "^0.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bonfipa/desafio01-bootcamp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bonfipa/desafio01-bootcamp/issues"
+  },
+  "homepage": "https://github.com/Bonfipa/desafio01-bootcamp#readme"
+}
