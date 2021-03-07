@@ -1,5 +1,5 @@
 {
-  "name": "desafio01-bootcamp",
+  "name": "desafio01",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -23,12 +23,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bonfipa/desafio01-bootcamp.git"
+    "url": "git+https://github.com/Bonfipa/desafio01.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Bonfipa/desafio01-bootcamp/issues"
+    "url": "https://github.com/Bonfipa/desafio01/issues"
   },
-  "homepage": "https://github.com/Bonfipa/desafio01-bootcamp#readme"
+  "homepage": "https://github.com/Bonfipa/desafio01#readme"
 }
