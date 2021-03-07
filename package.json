@@ -4,13 +4,22 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "cypress": "^6.6.0",
+    "cypress": "4.10.0",
     "faker-br": "^0.4.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cypress-multi-reporters": "^1.4.0",
+    "mocha": "^8.3.1",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  },
   "scripts": {
     "cy:open": "npx cypress open",
-    "cy:run": "npx cypress run"
+    "cy:run": "npx cypress run",
+    "report:merge": "mochawesome-merge > full_report.json",
+    "report:mocha": "marge full_report.json",
+    "report:clean": "rm -rf mochawesome-report full_report.json"
   },
   "repository": {
     "type": "git",
