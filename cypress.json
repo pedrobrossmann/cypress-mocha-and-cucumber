@@ -3,11 +3,16 @@
     "baseUrl": "http://automationpractice.com",
     "experimentalSourceRewriting":true,
     "watchForFileChanges":false,
-    "video": true,
+    "chromeWebSecurity": false, 
+    "video": false,
     "testFiles": "**/*.*spec.*",
     "env": {
         "name": "Elcy Braga",
         "user": "pedrobrossmann@gmail.com",
         "pwd": "123456789"
+    },
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "configFile": "reporter-config.json"
     }
 }
