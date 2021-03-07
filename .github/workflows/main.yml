@@ -51,3 +51,12 @@ jobs:
       # Limpa os arquivos gerados para criação do relátorio
       
       - run: npm run report:clean
+      
+      # Publicar relatorio  html utilizando git hub pages
+      
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with:
+           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+           BRANCH: gh-pages
+           FOLDER: cypress/reports
