@@ -1,5 +1,9 @@
 # Desafio 01 - Agilizei
 
+### Tecnologias Utilizadas:
+* Framework para crição dos testes [cypress](https://www.cypress.io/)
+* Gera relatorio com resultado dos testes [Mochawesome](https://www.npmjs.com/package/mochawesome)
+* Biblioteca para gerar informações fakes [faker-br](https://www.npmjs.com/package/faker-br)
 #### 1. Clone o projeto
 
 ```
