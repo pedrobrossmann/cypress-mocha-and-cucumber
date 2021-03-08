@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-03-08T00:54:34.573Z",
-    "end": "2021-03-08T00:54:50.738Z",
-    "duration": 16165,
+    "start": "2021-03-08T01:04:30.373Z",
+    "end": "2021-03-08T01:04:42.837Z",
+    "duration": 12464,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e044d488-4270-48c3-9030-5af6a6b14331",
+      "uuid": "6a8b029e-1e5d-48a9-b78f-c97a10cca734",
       "title": "",
       "fullFile": "cypress/integration/authentication/register.spec.js",
       "file": "cypress/integration/authentication/register.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "302909d5-7506-491f-82b8-9796457b90af",
+          "uuid": "8f25da62-e036-40f4-afce-db53954f20dc",
           "title": "Register",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Register user successfully",
               "fullTitle": "Register Register user successfully",
               "timedOut": null,
-              "duration": 16011,
+              "duration": 12383,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.create_account_begin(user.email);\ncy.create_account_gender(user.gender);\ncy.create_account_personal_information(user.first_name, user.last_name, user.email, user.passwd, user.day, user.month, user.year);\ncy.create_account_newsletter_true();\ncy.create_account_recieve_offers_true();\ncy.create_account_address(user.first_name, user.last_name, user.company, user.street, user.street_complement, user.city, user.state, user.postal_code, user.add_info, user.home_phone, user.mobile_phone);\ncy.assertion_user_Logged(\"\".concat(user.first_name, ' ').concat(user.last_name));",
               "err": {},
-              "uuid": "d3424b82-adcc-4b3b-8aa9-c442b64bdf40",
-              "parentUUID": "302909d5-7506-491f-82b8-9796457b90af",
+              "uuid": "05a633bb-b31a-49f6-8c2a-4b16186ac362",
+              "parentUUID": "8f25da62-e036-40f4-afce-db53954f20dc",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d3424b82-adcc-4b3b-8aa9-c442b64bdf40"
+            "05a633bb-b31a-49f6-8c2a-4b16186ac362"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 16011,
+          "duration": 12383,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
