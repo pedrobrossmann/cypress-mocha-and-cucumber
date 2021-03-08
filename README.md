@@ -4,3 +4,4 @@
 Utilizando mocha:
 npm install -D mocha mochawesome mochawesome-merge mochawesome-report-generator cypress-multi-reporters
 i
+.adsada
