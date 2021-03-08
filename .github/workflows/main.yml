@@ -48,10 +48,6 @@ jobs:
       # Gera o relatorio em HTML
       - run: npm run report:mocha
       
-      # Limpa os arquivos gerados para criação do relátorio
-      
-      - run: npm run report:clean
-      
       # Publicar relatorio  html utilizando git hub pages
       
       - name: Deploy to GitHub Pages
