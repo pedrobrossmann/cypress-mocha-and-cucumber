@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-08T00:30:37.254Z",
+    "end": "2021-03-08T00:30:51.379Z",
+    "duration": 14125,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8796e25f-b2b4-46a5-96b4-b18c226d096d",
+      "title": "",
+      "fullFile": "cypress/integration/authentication/register.spec.js",
+      "file": "cypress/integration/authentication/register.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cb1270f1-616e-4f65-b817-28cd508c6b2e",
+          "title": "Register",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Register user successfully",
+              "fullTitle": "Register Register user successfully",
+              "timedOut": null,
+              "duration": 13978,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.create_account_begin(user.email);\ncy.create_account_gender(user.gender);\ncy.create_account_personal_information(user.first_name, user.last_name, user.email, user.passwd, user.day, user.month, user.year);\ncy.create_account_newsletter_true();\ncy.create_account_recieve_offers_true();\ncy.create_account_address(user.first_name, user.last_name, user.company, user.street, user.street_complement, user.city, user.state, user.postal_code, user.add_info, user.home_phone, user.mobile_phone);\ncy.assertion_user_Logged(\"\".concat(user.first_name, ' ').concat(user.last_name));",
+              "err": {},
+              "uuid": "886e8815-425a-4644-8939-51d1e7ce5329",
+              "parentUUID": "cb1270f1-616e-4f65-b817-28cd508c6b2e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "886e8815-425a-4644-8939-51d1e7ce5329"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13978,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
