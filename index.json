@@ -1,0 +1,184 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-08T00:08:01.977Z",
+    "end": "2021-03-08T00:08:29.691Z",
+    "duration": 24289,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7586f766-a1d9-42b5-a2a8-3b22f48aa24e",
+      "title": "",
+      "fullFile": "cypress/integration/authentication/register.spec.js",
+      "file": "cypress/integration/authentication/register.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "43a7b29f-c4f2-471c-86b7-d898765dac16",
+          "title": "Register",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Register user successfully",
+              "fullTitle": "Register Register user successfully",
+              "timedOut": null,
+              "duration": 13913,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.create_account_begin(user.email);\ncy.create_account_gender(user.gender);\ncy.create_account_personal_information(user.first_name, user.last_name, user.email, user.passwd, user.day, user.month, user.year);\ncy.create_account_newsletter_true();\ncy.create_account_recieve_offers_true();\ncy.create_account_address(user.first_name, user.last_name, user.company, user.street, user.street_complement, user.city, user.state, user.postal_code, user.add_info, user.home_phone, user.mobile_phone);\ncy.assertion_user_Logged(\"\".concat(user.first_name, ' ').concat(user.last_name));",
+              "err": {},
+              "uuid": "f621b93a-0c89-46ae-a0fa-7ca2a20a6fba",
+              "parentUUID": "43a7b29f-c4f2-471c-86b7-d898765dac16",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f621b93a-0c89-46ae-a0fa-7ca2a20a6fba"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13913,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b065d4b8-763d-4552-bda3-24ddea57c0b3",
+      "title": "",
+      "fullFile": "cypress/integration/authentication/login.spec.js",
+      "file": "cypress/integration/authentication/login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "71c7bbd2-9703-4907-9c78-0ca80bf54277",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login successfully",
+              "fullTitle": "Login Login successfully",
+              "timedOut": null,
+              "duration": 7714,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(Cypress.env('user'), Cypress.env('pwd')); //Assertion\ncy.assertion_user_Logged(Cypress.env('name'));",
+              "err": {},
+              "uuid": "31de0a09-fedf-4076-a6b7-451a27daa5f0",
+              "parentUUID": "71c7bbd2-9703-4907-9c78-0ca80bf54277",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login unsuccessfully",
+              "fullTitle": "Login Login unsuccessfully",
+              "timedOut": null,
+              "duration": 2662,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(Cypress.env('user'), 'PWD_ERROR'); //Assertion\ncy.get('[class=\"alert alert-danger\"]').contains('There is 1 error');\ncy.get('[class=\"alert alert-danger\"]').contains('Authentication failed.');",
+              "err": {},
+              "uuid": "f7eaab07-0405-4a3a-9543-774b18e191d8",
+              "parentUUID": "71c7bbd2-9703-4907-9c78-0ca80bf54277",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "31de0a09-fedf-4076-a6b7-451a27daa5f0",
+            "f7eaab07-0405-4a3a-9543-774b18e191d8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10376,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
