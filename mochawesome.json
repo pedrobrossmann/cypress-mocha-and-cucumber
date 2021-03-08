@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2021-03-08T00:34:55.363Z",
-    "end": "2021-03-08T00:35:08.515Z",
-    "duration": 13152,
+    "start": "2021-03-08T00:54:16.523Z",
+    "end": "2021-03-08T00:54:28.667Z",
+    "duration": 12144,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "384733f0-d2a9-43b9-8224-bb9f69b6f427",
+      "uuid": "814f33a6-2ed7-4891-8a95-4dc072b99b7d",
       "title": "",
       "fullFile": "cypress/integration/authentication/login.spec.js",
       "file": "cypress/integration/authentication/login.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ebbc657d-7b67-4aa0-aed2-7c805ccb16dd",
+          "uuid": "93842fad-9da5-4c38-8bd4-601639289700",
           "title": "Login",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Login successfully",
               "fullTitle": "Login Login successfully",
               "timedOut": null,
-              "duration": 8657,
+              "duration": 9258,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.login(Cypress.env('user'), Cypress.env('pwd')); //Assertion\ncy.assertion_user_Logged(Cypress.env('name'));",
               "err": {},
-              "uuid": "e4cd3071-99b7-4ffa-85f5-663eae6c421f",
-              "parentUUID": "ebbc657d-7b67-4aa0-aed2-7c805ccb16dd",
+              "uuid": "0b839c2f-f304-4958-9446-0a45340287d3",
+              "parentUUID": "93842fad-9da5-4c38-8bd4-601639289700",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Login unsuccessfully",
               "fullTitle": "Login Login unsuccessfully",
               "timedOut": null,
-              "duration": 4404,
+              "duration": 2739,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.login(Cypress.env('user'), 'PWD_ERROR'); //Assertion\ncy.get('[class=\"alert alert-danger\"]').contains('There is 1 error');\ncy.get('[class=\"alert alert-danger\"]').contains('Authentication failed.');",
               "err": {},
-              "uuid": "d43b7672-5730-41c3-83d1-68a5a4519583",
-              "parentUUID": "ebbc657d-7b67-4aa0-aed2-7c805ccb16dd",
+              "uuid": "31828c6d-484b-40f2-994d-ef300e65b0cd",
+              "parentUUID": "93842fad-9da5-4c38-8bd4-601639289700",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e4cd3071-99b7-4ffa-85f5-663eae6c421f",
-            "d43b7672-5730-41c3-83d1-68a5a4519583"
+            "0b839c2f-f304-4958-9446-0a45340287d3",
+            "31828c6d-484b-40f2-994d-ef300e65b0cd"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 13061,
+          "duration": 11997,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
