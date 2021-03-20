@@ -38,4 +38,4 @@ npm run cy:report:clean
 
 # Integração com Github pages
 
-* A cada pull request ou push todos os testes são executados. O relatório pode ser acessado [aqui](https://bonfipa.github.io/desafio01/)
+* A cada pull request ou push todos os testes são executados. O relatório pode ser acessado [aqui](https://pedrobrossmann.github.io/desafio01/)
